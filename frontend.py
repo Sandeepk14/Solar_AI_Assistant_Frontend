@@ -1,9 +1,9 @@
 
-
+import os
 import streamlit as st
 import requests
 
-# Replace with your Render backend URL
+PORT = os.getenv("PORT", "10000")  
 API_URL = "https://solar-ai-assistant-genai-projects.onrender.com"
 
 st.title("🌞 Solar Industry AI Assistant")
